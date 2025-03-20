@@ -1,15 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #0073e6;
-    color: white;
+/* Stili per la sezione dei prodotti */
+section {
+    display: flex; /* Usa flexbox per disporre gli elementi orizzontalmente */
+    justify-content: space-around; /* Spazio equo tra gli elementi */
+    gap: 20px; /* Spazio tra le immagini */
+    flex-wrap: wrap; /* Se lo schermo è piccolo, gli elementi si sposteranno su più righe */
     padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
+  }
+  
+  .product {
+    text-align: center; /* Centra il contenuto del prodotto */
+    width: 250px; /* Imposta una larghezza fissa per ogni prodotto */
+  }
+  
+  .product img {
+    width: 100%; /* Le immagini occupano tutta la larghezza del contenitore */
+    height: auto; /* Mantieni le proporzioni dell'immagine */
+    border-radius: 10px; /* Aggiungi bordi arrotondati alle immagini */
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
